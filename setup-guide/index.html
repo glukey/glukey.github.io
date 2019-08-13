@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>GluKey Setup Guide</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/foundation.min.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/foundation.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		// $(document).foundation();
+		$('.slideshow').slick({
+			autoplay: true,
+		  autoplaySpeed: 5000,
+			dots: true,
+			arrows: false
+		});
+	});
+</script>
+
+<style media="screen">
+	header {
+		margin-top: 40px;
+		margin-bottom: 20px;
+	}
+
+	h2 {
+		font-size: 1.75rem;
+		margin-top: 1.5em;
+	}
+	blockquote {
+		margin-top: 1.5em;
+	}
+	footer {
+		font-size: 14px;
+		padding: 40px 0;
+		color: #777;
+	}
+	.app-store-text {
+		color: #777;
+		padding-top: 20px;
+	}
+</style>
+</head>
+
+<body>
+
+<header class="row">
+	<div class="large-6 medium-8 small-10 large-offset-3 medium-offset-2 small-offset-1 columns">
+		<a href="/"><img src="../logo.png" style=""></a>
+	</div>
+</header>
+
+<div class="row">
+	<div class="large-8 medium-7 columns small-centered">
+		<h1>Configuring the G5 App to Share</h1>
+		<p>In order for GluKey to have data, you must be uploading data (or “sharing”) from the Dexcom G5 or G6 Mobile App on the iOS device paired with the sensor. (G4 Share users “share” using the Share 2 app. G5 users use the Dexcom G5 Mobile App. G6 users use the Dexcom G6 Mobile App. Android users should also be able to use the Dexcom G5 App, but I have not personally tested it yet.)</p>
+
+		<p>To configure the Dexcom G5/G6 Mobile App to share, click the icon that appears on the far right of the four icons at the top of the Dexcom G5/G6 Mobile App screen. (This icon appears in gray when the G5 is not configured to share.)</p>
+
+		<img src="../images/g5-share.png" alt="Dexcom G5 App Screenshot">
+
+		<p>After clicking the icon shown above, follow the on-screen prompts to set up and/or log into the Dexcom account and begin “sharing” your CGM data.</p>
+
+		<p>When the G5/G6 app is configured to Share, the icon on the far right will be shown in color:<br>
+			<img src="../images/g5-share-colors-icon.png" alt="Dexcom G5 Share Enabled">
+		</p>
+
+		<p>(<b>Note:</b> To be actively sharing, the Dexcom G5 Mobile App must show the Share icon in full color and must be showing a current blood glucose value.)</p>
+
+		<p>If there is a problem with the Share feature, the Share icon will be shown in gray with a red notification, however some users are still able to use the sharing functionality even though the red notification is present (including myself):<br>
+			<img src="../images/g5-share-notsharing.png" alt="Dexcom G5 Share Notice">
+		</p>
+
+		<p>Once your G5 is successfully sharing data, you can use the Dexcom Follow app (if available for your device) to view the data, in addition to using it for GluKey. For GluKey, you should use the same login information you created for your Dexcom share account.</p>
+	</div>
+
+</div>
+
+
+<hr style="margin-top: 50px;">
+
+<div class="row">
+	<div class="large-4 medium-5 columns">
+		<p class="app-store-text text-center">
+			<a href="https://itunes.apple.com/us/app/glukey/id1262957463?mt=12">
+				<img src="../app-store-badge.svg" style="max-width: 150px;">
+			</a>
+		</p>
+	</div>
+
+	<div class="large-8 medium-7 columns">
+		<blockquote class="notice">Note: This application is not owned or affiliated with Dexcom. The data is provided for educational purposes only and should not be used to treat any medical conditions. Always check with your meter before making corrective decisions.</blockquote>
+	</div>
+</div>
+
+<footer class="row">
+	<div class="column text-center">
+		&copy; 2017 James Pierce
+	</div>
+</footer>
+</body>
+</html>

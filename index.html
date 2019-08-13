@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>GluKey Support</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/foundation.min.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/foundation.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		// $(document).foundation();
+		$('.slideshow').slick({
+			autoplay: true,
+		  autoplaySpeed: 5000,
+			dots: true,
+			arrows: false
+		});
+	});
+</script>
+
+<style media="screen">
+	header {
+		margin-top: 40px;
+		margin-bottom: 20px;
+	}
+
+	h2 {
+		font-size: 1.75rem;
+		margin-top: 1.5em;
+	}
+	blockquote {
+		margin-top: 1.5em;
+	}
+	footer {
+		font-size: 14px;
+		padding: 40px 0;
+		color: #777;
+	}
+	footer a {
+		color: inherit;
+		border-bottom: 1px solid #ccc;
+	}
+	.app-store-text {
+		color: #777;
+		padding-top: 20px;
+	}
+</style>
+</head>
+
+<body>
+
+<header class="row">
+	<div class="large-6 medium-8 small-10 large-offset-3 medium-offset-2 small-offset-1 columns">
+		<img src="logo.png" style="">
+	</div>
+</header>
+
+
+<div class="row">
+	<div class="large-8 medium-7 columns">
+
+		<p>GluKey unobtrusively puts real-time glucose readings from your Dexcom Share continuous glucose monitor (CGM) right on your macOS toolbar. The most recent glucose reading and trend arrow are always visible in the status bar. A detailed graph with up to 24 hours of data is also just a click away. You can set notifications for low and high glucose alerts, as well as notifications for when no data is being received from the CGM device.</p>
+
+		<p>To use GluKey, make sure Dexcom Share is enabled on your device or the Dexcom app. Then simply enter your credentials in the GluKey settings panel. Your password is securely stored in the macOS keychain and your glucose information is never stored on your computer or transferred outside of the app. All glucose information is retained on the Dexcom servers.</p>
+
+		<h2>Features:</h2>
+		<ul>
+			<li>Current glucose level and trend line in the status bar</li>
+			<li>Large detailed glucose graph</li>
+			<li>Works with all Dexcom Share devices, such as the Dexcom G5</li>
+			<li>Customizable alerts</li>
+			<li>Display units in mg/dl or mmol/l</li>
+			<li>Data is always kept safe and private</li>
+		</ul>
+
+		<h2>Support:</h2>
+		<p>GluKey is an ongoing, open-source project sponsored by James Pierce. If you have any questions, feel free to email <a href="mailto:support@glukey.com">support@glukey.com</a> or sumbit an issue on <a href="https://github.com/jpegjames/glukey/issues">GitHub</a>.</p>
+
+		<blockquote class="notice">Note: This application is not owned or affiliated with Dexcom. The data is provided for educational purposes only and should not be used to treat any medical conditions. Always check with your meter before making corrective decisions.</blockquote>
+	</div>
+
+
+	<div class="large-4 medium-5 columns">
+		<div class="slideshow">
+		  <div><img src="screenshots/GluKey-1.jpg" alt=""></div>
+		  <div><img src="screenshots/GluKey-2.jpg" alt=""></div>
+		  <div><img src="screenshots/GluKey-3.jpg" alt=""></div>
+		</div>
+
+		<p class="app-store-text text-center">
+			<a href="https://itunes.apple.com/us/app/glukey/id1262957463?mt=12">
+				<img src="app-store-badge.svg" style="max-width: 150px;">
+			</a>
+		</p>
+	</div>
+</div>
+
+<footer class="row">
+	<div class="column text-center">
+		&copy; 2017 James Pierce | <a href="privacy.html">Privacy Policy</a>
+	</div>
+</footer>
+</body>
+</html>
